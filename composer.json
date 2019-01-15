@@ -6,7 +6,7 @@
   },
   "type": "magento2-module",
   "license": [
-    "BSD-3-Clause"
+    "OSL-3.0"
   ],
   "autoload": {
     "files": [
