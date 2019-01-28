@@ -25,7 +25,7 @@
                             title="<?= /* @noEscape */ $block->escapeHtml(__("coupon_code"));?>"
                             class="validate-select"
                         <?php if (strlen($block->getCouponCode())): ?> disabled="disabled" <?php endif; ?>>
-                        <option value=""><?= $block->escapeHtml(__('Please select a coupon')) ?></option>
+                        <option value=""><?= $block->escapeHtml(__('Select a coupon')) ?></option>
                         <?php foreach ($block->getCouponCodes() as $coupon): ?>
                             <option value="<?= $coupon->getCode() ?>" <?php if ($coupon->getCode() == $block->getCouponCode()): ?> selected <?php endif; ?> ><?= $coupon->getCode() ?></option>
                         <?php endforeach; ?>
